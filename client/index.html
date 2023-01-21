@@ -5,23 +5,21 @@
         <title>Negociações</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.css">
-        <script defer src="/js/app/models/Negociacao.js"></script>
-        <script defer src="/js/app/controllers/NegociacaoControllers.js"></script>
         
-</head>
-<body class="container">
-    
-    <h1 class="text-center">Negociações</h1>
-    
-    <form class="form" onsubmit="negociacaoController.adiicona(event)">
+    </head>
+    <body class="container">
         
-        <div class="form-group">
-            <label for="data">Data</label>
-            <input type="date" id="data" class="form-control" required autofocus/>        
-        </div>    
+        <h1 class="text-center">Negociações</h1>
         
-        <div class="form-group">
-            <label for="quantidade">Quantidade</label>
+        <form class="form" onsubmit="negociacaoController.adiciona(event)">
+            
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" class="form-control" required autofocus/>        
+            </div>    
+            
+            <div class="form-group">
+                <label for="quantidade">Quantidade</label>
             <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required/>
         </div>
         
@@ -60,7 +58,11 @@
         <tfoot>
         </tfoot>
     </table>
-    
+    <script src="/js/app/models/Negociacao.js"></script>
+    <script src="/js/app/controllers/NegociacaoControllers.js"></script>
+    <script>
+        let negociacaoController = new NegociacaoController();
+    </script>
   
 </body>
 </html>
