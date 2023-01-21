@@ -1,12 +1,11 @@
-//class NegociacaoController{
-//    
-//
-//    adiciona(event){
-//        event.preventDefault();
-//        alert('Chamei ação no controller');
-//    }
-//
-//
-//}
+class NegociacaoController{
+    
 
-alert('teste de alert javascript')
+    adiciona(event){
+        event.preventDefault();
+        alert('Chamei ação no controller');
+    }
+
+
+}
+
